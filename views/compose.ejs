@@ -1,0 +1,11 @@
+
+<%- include('partials/header') -%>
+<h1>post</h1>
+<form action="/compose" method="POST">
+    <div class="formgroup">
+        <input name="postTitle" id="posttitle" autofocus type="text" autocomplete="off">
+        <textarea name="postBody" id="postbox" cols="50" rows="8" placeholder="type tour post" autocomplete="false" required maxlength="500"></textarea>
+    </div>
+<button class="btn btn-primary" type="submit" name="">post</button>
+</form>
+<%- include("partials/footer") -%>
